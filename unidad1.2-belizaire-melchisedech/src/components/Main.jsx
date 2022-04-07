@@ -1,10 +1,10 @@
 import React from "react";
 import Body from "./Body";
 
-const Main = ({ pageBody }) => {
+const Main = ({ body }) => {
   return (
     <div>
-      <Body body={pageBody} />
+      <Body body={body} />
       <nav>
         <ul>
           <li>

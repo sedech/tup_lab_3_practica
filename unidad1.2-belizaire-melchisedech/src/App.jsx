@@ -11,7 +11,11 @@ function App() {
   return (
     <Page>
       <Header title={site.pageTitle} />
-      <Main body={site.pageBody} />
+      <Main 
+      body={site.pageBody} 
+      react={site.react} 
+      practica={site.practica} 
+      />
     </Page>
   );
 }
