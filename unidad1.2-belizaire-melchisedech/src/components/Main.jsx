@@ -1,21 +1,22 @@
 import React from "react";
+import BlogPost from "../BlogPost";
+
 import Body from "./Body";
 
-const Main = ({ body }) => {
+const Main = ({ body, react, practica }) => {
   return (
     <div>
-      <Body body={body} />
+      <Body body={body.toUpperCase()} estilo="italic" />
+      <BlogPost />
       <nav>
         <ul>
           <li>
-            <a
-              href="https://github.com/sedech/tup_lab_3_practica"
-              target="_blank"
-            >
+            <a href={practica} target="blank">
               Practica Lab III
-            </a>{" "}
-            <br /> <br />
-            <a href="https://es.reactjs.org/" target="_blank">
+            </a>
+          </li>
+          <li>
+          <a href={react} target="blank">
               Bibioteca de React
             </a>
           </li>
